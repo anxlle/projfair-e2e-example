@@ -18,5 +18,7 @@ public class TestCandidate {
         $("[data-test='header-user-actions-auth-button']").click();
         dismiss();
         confirm();
+        $("[data-test='header-user-actions'] .username").shouldHave(exactText("Булгатов А."));
+        System.out.println("auth as candidate successful");
     }
 }

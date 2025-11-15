@@ -18,5 +18,6 @@ public class TestSupervisor {
         $("[data-test='header-user-actions-auth-button']").click();
         confirm();
         $("[data-test='header-user-actions'] .username").shouldHave(exactText("Антипин Д. А."));
+        System.out.println("auth as supervisor successful");
     }
 }
